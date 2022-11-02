@@ -8,8 +8,12 @@ const Header = () => {
 
     return (
         <>
-          <Link to={"/sign-in"} >  <button>Kirish</button> </Link>
-            <Link to={"/sign-out"} > <button>Ro'yxatdan o'tish</button> </Link>
+          {/* <Link to={"/sign-in"} >   */}
+          <button>Kirish</button> 
+          {/* </Link> */}
+            {/* <Link to={"/sign-out"} > */}
+                 <button>Ro'yxatdan o'tish</button> 
+                 {/* </Link> */}
          
         </>
     );

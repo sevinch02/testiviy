@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from '../header/Header';
 import Sucsecc from '../pages/Sucsecc';
-import Login from '../components/login/Login';
 
 
 
@@ -11,8 +10,7 @@ const Private = () => {
      <>
         <Routes>
           <Route>
-            <Route path='/' element={<Sucsecc />} />   
-            <Route path='/login' element={< Login/>} /> 
+            <Route path='/sucsecc' element={<Sucsecc />} />    
           </Route>
         </Routes>
     
