@@ -1,9 +1,12 @@
 // import React from 'react';
-import Registrition from "../components/registrition/Registrition";
+// import Registrition from "../components/registrition/Registrition";
+
+import Home from "../pages/Home";
 
 const Public = () => {
   return (
-        <Registrition/>
+    
+    <Home/>
   );
 };
 
