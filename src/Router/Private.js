@@ -11,7 +11,8 @@ const Private = () => {
      <>
         <Routes>
     
-            <Link to="/login">login</Link>
+            <Link to="/sign-in">login</Link>
+            <Link  to="/sign-out">Royhatdan otish </Link>
       
         </Routes>
     

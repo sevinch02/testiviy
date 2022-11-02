@@ -68,6 +68,7 @@ function Registrition() {
                 // else  alert("Client Error")
             });
     };
+
     return (
         <div className="">
             <LoginCard>
@@ -103,10 +104,13 @@ function Registrition() {
                                 className='button'
                                 type="submit"  > Ro'yhatdan o'tish
                             </Button>
+                          
                         </form>
+                   
                     </Row>
                 </LoginDiv>
             </LoginCard>
+         
 
         </div>
     );
