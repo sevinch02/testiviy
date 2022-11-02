@@ -1,22 +1,22 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Successful from '../components/sucssecful/Successful';
+import { Route, Routes , Link } from 'react-router-dom';
+import Header from '../header/Header';
+import Sucsecc from '../pages/Sucsecc';
+import Login from '../components/login/Login';
 
 
 
 const Private = () => {
     return (
      <>
-      
         <Routes>
-          <Route >
-            <Route path='/' element={<Successful />} />
-           
-          </Route>
+    
+            <Link to="/login">login</Link>
+      
         </Routes>
     
        </>
-    
+
     );
   };
   

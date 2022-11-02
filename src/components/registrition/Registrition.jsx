@@ -1,10 +1,12 @@
 import React, { useRef, useContext } from 'react';
 import styled from 'styled-components';
 import { Context } from '../../contex/Auth';
+import Header from '../../header/Header';
 
 
 const LoginCard = styled.div`
 background: #FFFFFF;
+text-align: center;
 `;
 const LoginDiv = styled.div`
 Width:316px;
@@ -24,7 +26,14 @@ line-height: 19px;
 text-align: center;
 color: rgba(0, 0, 0, 0.87);
 `;
-function Auth() {
+
+const Button =styled.button`
+display:block;
+margin:20px 0;
+margin-left:auto;
+margin-right:auto;
+`
+function Registrition() {
 
     const [, setToken] = useContext(Context);
     const usenameRef = useRef();
@@ -52,6 +61,7 @@ function Auth() {
             .then((data) => {
                 if (!data.error) {
                     setToken(data.token);
+                    console.log(data.setToken)
 
                 }
                 else alert(data.message)
@@ -61,6 +71,7 @@ function Auth() {
     return (
         <div className="">
             <LoginCard>
+                <Header/>
                 <LoginDiv>
                     <Row>
                         <Title>Ro'yhatdan o'tish</Title>
@@ -88,10 +99,10 @@ function Auth() {
 
 
 
-                            <button id='btn'
+                            <Button id='btn'
                                 className='button'
                                 type="submit"  > Ro'yhatdan o'tish
-                            </button>
+                            </Button>
                         </form>
                     </Row>
                 </LoginDiv>
@@ -101,4 +112,4 @@ function Auth() {
     );
 }
 
-export default Auth;
+export default Registrition;
