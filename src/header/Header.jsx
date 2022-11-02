@@ -5,12 +5,16 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <>
-            <Link className='link' to='/sign-in'> <button>Kirish</button>
-            </Link>
-            <Link className='link' to='/sign-out'>  <button>Ro'yxatdan o'tish</button>
-            </Link>
-        </>
+        <div>
+            <button>
+                <Link to={"/sign-up"} >Kirish </Link>
+            </button>
+            <button>
+                <Link to={"/sign-out"} >Ro'yhatdan o'tish </Link>
+            </button>
+            
+        </div>
+
     );
 };
 
